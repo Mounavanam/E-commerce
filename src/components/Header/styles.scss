@@ -30,21 +30,39 @@
 
 
     .callToActions {
-        position: absolute;
-        top: 50%;
-        left: 15px;
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        transform: translateY(-50%);
 
-        ul,
-        li {
+
+        position: relative;
+        top: 10%;
+        left: 300%;
+        -webkit-transform: translateX(250%);
+        -moz-transform: translateX(250%);
+        transform: translateX(250%);
+
+
+
+        ul {
             margin: 0;
             padding: 0;
+
         }
 
         li {
+            display: inline-block;
             list-style-type: none;
+            margin-right: 1.2rem;
+            margin-top: 1.5rem;
+
+            span {
+                cursor: pointer;
+            }
+
+
+
+            &:last-child {
+                margin-right: 0;
+
+            }
 
             a {
                 font-size: 1.8rem;
@@ -52,7 +70,6 @@
                 color: black;
                 text-decoration: none;
                 text-transform: uppercase;
-                margin-left: 90rem;
             }
         }
     }
